@@ -314,6 +314,45 @@ body, html, #root {
     text-align: center;
   }
 }
+/* === RESPONSIVIDADE MOBILE === */
+@media (max-width: 768px) {
+  .logo-left-img {
+    height: 100px; /* reduz o logo */
+  }
+
+  .menu-container {
+    grid-template-columns: 1fr; /* 1 coluna por linha */
+    gap: 15px; /* menor espaçamento */
+    padding: 20px;
+  }
+
+  .category-card {
+    padding: 25px 15px; /* diminui padding para caber */
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-left-img {
+    height: 80px; /* ainda menor em telas muito pequenas */
+  }
+
+  .menu-container {
+    padding: 15px;
+  }
+
+  .category-card {
+    padding: 20px 10px;
+  }
+
+  .category-name {
+    font-size: 18px;
+  }
+
+  .category-subtitle {
+    font-size: 12px;
+  }
+}
 
 /* === ANIMAÇÕES === */
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
@@ -360,3 +399,30 @@ body, html, #root {
   .menu-title { font-size: 28px; }
   .menu-container { gap: 15px; padding: 20px 0; }
 }
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* pilha os grupos no mobile */
+    align-items: flex-start; /* alinha todos à esquerda */
+    text-align: left;
+  }
+
+  .footer-info {
+    flex-direction: row; /* ícone à esquerda, texto à direita */
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 20px; /* espaçamento entre os grupos */
+  }
+
+  .footer-group {
+    display: flex;
+    flex-direction: column; /* título acima da informação */
+    align-items: flex-start; /* texto alinhado à esquerda */
+  }
+
+  .footer-group h4,
+  .footer-group p {
+    text-align: left; /* garante alinhamento à esquerda */
+    margin: 0;
+  }
+}
+
