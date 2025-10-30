@@ -177,8 +177,8 @@ function App() {
     {/* Grupo de data e hora */}
     <div className="footer-group">
       <h4>Data & Hora</h4>
-      <p>13 de Novembro</p>
-      <p>18h 30min</p>
+      <p>14 de Novembro</p>
+      <p>19h 30min</p>
     </div>
   </div>
 </footer>

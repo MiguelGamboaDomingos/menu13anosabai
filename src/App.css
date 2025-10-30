@@ -400,6 +400,9 @@ body, html, #root {
   .menu-container { gap: 15px; padding: 20px 0; }
 }
 @media (max-width: 768px) {
+  .logo-left-img { height: 150px; padding: 20px }
+  .menu-title { font-size: 28px; }
+  .menu-container { gap: 15px; padding: 20px 0; }
   .footer-container {
     flex-direction: column; /* pilha os grupos no mobile */
     align-items: flex-start; /* alinha todos à esquerda */
