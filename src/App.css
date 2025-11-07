@@ -294,6 +294,31 @@ body, html, #root {
   padding: 20px 40px;
   gap: 20px;
 }
+/*
+ * Estilização do Aviso no Fim do Menu
+ */
+.menu-warning {
+  /* 1. Ocupar a largura total do contêiner */
+  /* Se .menu-container for grid, isso faz o item ocupar todas as colunas */
+  grid-column: 1 / -1;
+  /* Se .menu-container for flex, isso garante 100% */
+  width: 100%;
+  
+  /* 2. Estilo para "Chamar Atenção" */
+  background-color: #fffbe6; /* Um amarelo/creme de aviso suave */
+  border: 1px solid #ffe58f;   /* Borda amarela */
+  color: #8a6d3b;             /* Cor de texto escura para bom contraste */
+  padding: 16px;
+  margin-top: 24px;          /* Espaçamento do último card */
+  border-radius: 8px;        /* Cantos arredondados */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Sombra leve */
+  
+  /* 3. Alinhamento "Horizontal" (do texto) */
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
 
 .footer-group {
   display: flex;
@@ -427,5 +452,8 @@ body, html, #root {
     text-align: left; /* garante alinhamento à esquerda */
     margin: 0;
   }
+  
+
+
 }
 

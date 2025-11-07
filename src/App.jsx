@@ -131,6 +131,10 @@ function App() {
             <p className="category-subtitle">{category.subtitle}</p>
           </div>
         ))}
+        <p className="menu-warning">
+                  Por favor, solicite apenas os itens disponíveis no nosso menu. <br />
+                  Tudo foi pensado para lhe proporcionar a melhor experiência.
+                </p>
       </main>
 
       {/* Modal */}
@@ -143,6 +147,7 @@ function App() {
             <h3 className="modal-title">
               {menuData.categories.find((c) => c.id === openCategory).name}
             </h3>
+            
             <div className="modal-items">
               {menuData.categories
                 .find((c) => c.id === openCategory)
@@ -152,11 +157,16 @@ function App() {
                     <p className="item-hover-desc">{item.description}</p>
                   </div>
                 ))}
+                
             </div>
+            {/* Aviso */}
+                
           </div>
+          
         </div>
+        
       )}
-
+      
       {/* Rodapé */}
       <footer className="location">
   <div className="footer-container">
