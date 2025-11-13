@@ -69,18 +69,20 @@ const menuData = {
       icon: '🥂',
       items: [
         { name: 'Fino', description: 'Refrescante e dourado.' },
-        { name: 'Vinho da casa/Tinto/Branco', description: 'Selecionado especialmente para o evento.' },
+        { name: 'Vinho da casa - Tinto/Branco', description: 'Selecionado especialmente para o evento.' },
         { name: 'Champanhada de frutos vermelhos', description: 'Equilíbrio entre doce e cítrico.' },
         { name: 'Água mineral', description: 'Pureza e leveza.' },
+        { name: 'Refrigerante', description: 'Coca-Cola, Fanta, Sprite, Sumol' },
+        { name: 'Sumos', description: 'Um pacote de sabores frescos e nutritivos.' },
         { name: 'Café/chá', description: 'Encerramento perfeito para a refeição.' }
       ]
     }
   ],
   location: {
-    address: 'Academia BAI',
+    address: '',
     city: 'Luanda - Angola',
-    phone: '+244 923 456 789',
-    hours: 'Segunda a Sexta, 8h às 18h'
+    phone: '',
+    hours: ''
   }
 }
 
